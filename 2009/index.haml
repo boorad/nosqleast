@@ -1,0 +1,134 @@
+!!!Strict
+%html
+  %head
+    %title no:sql(east) conference.
+    %link( rel="stylesheet" type="text/css" href="../nosql.css" )
+  %body
+
+    .page.narrow
+
+      .head
+        .line.border
+          .unit.size1of2.logo.border
+            .air
+              %a.no( href="#home" ) no
+              %span.dim<> :
+              %span.sql sql
+              %span.dim<> (
+              %span.east east
+              %span.dim<> )
+              %span.dim<> .
+          .lastUnit.size1of2.border.bigAirTop.airLeft
+            .line
+              %span.command date
+              %span.dim =
+              %span.string "October 28&ndash;30, 2009"
+            .line
+              %span.command location
+              %span.dim =
+              %span.string "Atlanta, GA"
+
+        .line.center.bigAir.border
+          select
+          %span.bright fun
+          %span.dim<> ,
+          %span.bright profit
+          from
+          %span.bright real_world
+          where
+          %span.bright relational
+          %span.dim<> =
+          false
+          %span.dim ;
+
+      .body.border.bigAir
+
+        > help
+
+
+        .gapLeft
+          .dim Available commands are:
+          .line
+            %a.command.unit.size1of4( href="#about" ) about
+            .lastUnit.size3of4 get list of organizers and sponsors
+          .line
+            %a.command.unit.size1of4( href="#agenda" ) agenda
+            .lastUnit.size3of4 get the schedule of the conference
+          .line
+            %a.command.unit.size1of4( href="#register" ) register
+            .lastUnit.size3of4 get registration for $300 until September 31st
+          .line
+            %a.command.unit.size1of4( href="#speakers" ) speakers
+            .lastUnit.size3of4 get list of confirmed speakers
+
+        #commands
+
+        #speakers.hidden
+          .line.gapTop
+            .unit >&nbsp;
+            %h1.lastUnit.command speakers
+
+          .gapLeft.smallGapTop
+
+            %h2 Brad Anderson
+            %p.dim He works at cloudant!
+
+            %h2.gapTop Chris Anderson
+            %p.dim He has the same last name as the other guy.
+
+        #agenda.hidden
+          .line.gapTop
+            .unit >&nbsp;
+            %h1.lastUnit.command agenda
+
+          .gapLeft.smallGapTop
+
+            %h2 Wednesday, October 28th
+            %p.dim 7:00pm-... Cocktail Welcome
+
+            %h2.gapTop Thursday, October 29th
+            %p.dim 8:00am-9:00am Registration
+            %p.dim 9:00am-9:15am Opening Remarks
+            %p.dim 9:15am-10:15am Talk 1 / Keynote
+            %p.dim break
+            %p.dim 10:30am-11:30am Talk 2
+            %p.dim 11:30am-12:30pm Talk 3
+            %p.dim 12:30pm- 1:30pm Lunch
+
+        #register.hidden
+          .line.gapTop
+            .unit >&nbsp;
+            %h1.lastUnit.command register
+
+          .gapLeft.smallGapTop
+            %p.dim More info coming soon.
+
+        #about.hidden
+          .line.gapTop
+            .unit >&nbsp;
+            %h1.lastUnit.command about
+
+          .gapLeft.smallGapTop
+            %h2 Organizers
+            %p.dim More info coming soon.
+            %h2.gapTop Sponsors
+            %p.dim More info coming soon.
+
+        #notfound.hidden
+          .line.gapTop
+            .unit >&nbsp;
+            %h1.lastUnit.command abc
+
+          .gapLeft.smallGapTop
+            %h2 Command not found. Type 'help' for a list of available commands.
+
+        #prompt.line.gapTop
+          .unit >&nbsp;
+          #command.unit.command
+          #cursor.bright.unit
+            |
+
+      .foot
+
+    %script( type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" )
+    %script( type="text/javascript" src="../nosql.js" )

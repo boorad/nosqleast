@@ -1,0 +1,378 @@
+html {
+  color: #000;
+  background: #FFF; }
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+li {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0;
+  font-variant: normal; }
+
+sup {
+  vertical-align: text-top; }
+
+sub {
+  vertical-align: text-bottom; }
+
+input, textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit; }
+
+input, textarea, select {
+  *font-size: 100%; }
+
+legend {
+  color: #000; }
+
+body {
+  font: 13px/1.231 arial,helvetica,clean,sans-serif;
+  *font-size: small;
+  *font: x-small; }
+
+select, input, button, textarea {
+  font: 99% arial,helvetica,clean,sans-serif; }
+
+table {
+  font-size: inherit;
+  font: 100%; }
+
+pre, code, kbd, samp, tt {
+  font-family: monospace;
+  *font-size: 108%;
+  line-height: 100%; }
+
+.line, .lastUnit {
+  overflow: hidden;
+  _overflow: visible;
+  _zoom: 1; }
+
+.unit {
+  float: left;
+  _zoom: 1; }
+
+.size1of1 {
+  float: none; }
+
+.size1of2 {
+  width: 50%; }
+
+.size1of3 {
+  width: 33.33333%; }
+
+.size2of3 {
+  width: 66.66666%; }
+
+.size1of4 {
+  width: 25%; }
+
+.size3of4 {
+  width: 75%; }
+
+.size1of5 {
+  width: 20%; }
+
+.size2of5 {
+  width: 40%; }
+
+.size3of5 {
+  width: 60%; }
+
+.size4of5 {
+  width: 80%; }
+
+.size1of6 {
+  width: 16.66666%; }
+
+.size5of6 {
+  width: 83.33333%; }
+
+.lastUnit {
+  float: none;
+  _position: relative;
+  _left: -3px;
+  _margin-right: -3px;
+  width: auto; }
+
+body {
+  _text-align: center; }
+
+.body {
+  overflow: hidden;
+  _overflow: visible;
+  _zoom: 1; }
+
+.page {
+  margin: 0 auto;
+  width: 950px;
+  _text-align: left; }
+
+.oldSchool {
+  width: 750px; }
+
+.gs960 {
+  width: 960px; }
+
+.liquid {
+  extends: .page;
+  width: auto;
+  margin: 0; }
+
+.main {
+  overflow: hidden;
+  _overflow: visible;
+  _zoom: 1; }
+
+.leftCol {
+  float: left;
+  width: 250px;
+  _margin-right: -3px; }
+
+.rightCol {
+  float: right;
+  width: 300px;
+  _margin-left: -3px; }
+
+.gMail {
+  width: 160px; }
+
+.gCal {
+  width: 180px; }
+
+.yahoo {
+  width: 240px; }
+
+.myYahoo {
+  width: 300px; }
+
+.mod {
+  margin: 10px; }
+  .mod .inner {
+    background: url(skin/transparent.png) repeat left top; }
+
+.hd, .bd, .ft {
+  overflow: hidden;
+  _overflow: visible;
+  _zoom: 1; }
+
+.inner {
+  position: relative; }
+
+b {
+  display: block;
+  background-repeat: no-repeat;
+  font-size: 1%;
+  position: relative;
+  z-index: 10; }
+
+.tl, .tr, .bl, .br {
+  height: 10px;
+  width: 10px;
+  float: left; }
+
+.tl {
+  background-position: left top; }
+
+.tr {
+  background-position: right top; }
+
+.bl {
+  background-position: left bottom; }
+
+.br {
+  background-position: right bottom;
+  float: right; }
+
+.tr {
+  float: right;
+  overflow: hidden;
+  margin-bottom: -32000px; }
+
+.tl {
+  overflow: hidden;
+  margin-bottom: -32000px; }
+
+.bl, .br {
+  margin-top: -10px; }
+
+.top {
+  background-position: center top; }
+
+.bottom {
+  background-position: center bottom;
+  _zoom: 1; }
+
+.complex {
+  overflow: hidden;
+  *position: relative;
+  *zoom: 1; }
+  .complex .tl, .complex .tr {
+    height: 32000px;
+    margin-bottom: -32000px;
+    width: 10px; }
+  .complex .top, .complex .bottom {
+    height: 5px; }
+
+.pop {
+  overflow: visible;
+  margin: 10px 20px 20px 10px;
+  background-position: left top; }
+  .pop .inner {
+    right: -10px;
+    bottom: -10px;
+    background-position: right bottom;
+    padding: 0 10px 10px 0; }
+  .pop .tl, .pop .br {
+    display: none; }
+  .pop .bl {
+    bottom: -10px; }
+  .pop .tr {
+    right: -10px; }
+
+.gapTop, .gapVertical, .gap {
+  margin-top: 20px; }
+
+.gapBottom, .gapVertical, .gap {
+  margin-bottom: 20px; }
+
+.gapLeft, .gapHorizontal, .gap {
+  margin-left: 20px; }
+
+.gapRight, .gapHorizontal, .gap {
+  margin-right: 20px; }
+
+.airTop, .airVertical, .air {
+  padding-top: 20px; }
+
+.airBottom, .airVertical, .air {
+  padding-bottom: 20px; }
+
+.airLeft, .airHorizontal, .air {
+  padding-left: 20px; }
+
+.airRight, .airHorizontal, .air {
+  padding-right: 20px; }
+
+.smallGapTop, .smallGapVertical, .smallGap {
+  margin-top: 10px; }
+
+.smallGapBottom, .smallGapVertical, .smallGap {
+  margin-bottom: 10px; }
+
+.smallGapLeft, .smallGapHorizontal, .smallGap {
+  margin-left: 10px; }
+
+.smallGapRight, .smallGapHorizontal, .smallGap {
+  margin-right: 10px; }
+
+.smallAirTop, .smallAirVertical, .smallAir {
+  padding-top: 10px; }
+
+.smallAirBottom, .smallAirVertical, .smallAir {
+  padding-bottom: 10px; }
+
+.smallAirLeft, .smallAirHorizontal, .smallAir {
+  padding-left: 10px; }
+
+.smallAirRight, .smallAirHorizontal, .smallAir {
+  padding-right: 10px; }
+
+.bigGapTop, .bigGapVertical, .bigGap {
+  margin-top: 40px; }
+
+.bigGapBottom, .bigGapVertical, .bigGap {
+  margin-bottom: 40px; }
+
+.bigGapLeft, .bigGapHorizontal, .bigGap {
+  margin-left: 40px; }
+
+.bigGapRight, .bigGapHorizontal, .bigGap {
+  margin-right: 40px; }
+
+.bigAirTop, .bigAirVertical, .bigAir {
+  padding-top: 40px; }
+
+.bigAirBottom, .bigAirVertical, .bigAir {
+  padding-bottom: 40px; }
+
+.bigAirLeft, .bigAirHorizontal, .bigAir {
+  padding-left: 40px; }
+
+.bigAirRight, .bigAirHorizontal, .bigAir {
+  padding-right: 40px; }
+
+@font-face {
+  font-family: Aller;
+  src: url(fonts/aller.ttf); }
+
+a {
+  text-decoration: none; }
+
+.narrow {
+  width: 900px; }
+
+html {
+  background: #222;
+  color: #aaa; }
+
+.border {
+  border: 1px solid #333;
+  margin: 0 -1px -1px 0; }
+  .border.lastUnit {
+    border-bottom: none; }
+
+.bright {
+  color: #fff; }
+
+.dim {
+  color: #444; }
+
+.command, .no {
+  color: #c36; }
+
+.sql, .string {
+  color: #f93; }
+
+.east {
+  color: #066; }
+
+body {
+  font-family: Aller, Corbel, sans-serif; }
+
+.page {
+  font-size: 160%; }
+
+.logo {
+  font-size: 70px; }
+
+.center {
+  text-align: center; }
+
+.hidden {
+  display: none !important; }

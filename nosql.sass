@@ -1,0 +1,50 @@
+@import oocss/oocss.sass
+@import spacing.sass
+
+@font-face
+  font-family: Aller
+  src: url(fonts/aller.ttf)
+
+
+// reset
+a
+  text-decoration: none
+
+// layout
+.narrow
+  width: 900px
+
+// colors
+html
+  background: #222
+  color: #aaa
+.border
+  border: 1px solid #333
+  margin: 0 -1px -1px 0
+  &.lastUnit
+    border-bottom: none
+
+.bright
+  color: #fff
+.dim
+  color: #444
+.command, .no
+  color: #c36
+.sql, .string
+  color: #f93
+.east
+  color: #066
+
+// typography
+body
+  font-family: Aller, Corbel, sans-serif
+.page
+  font-size: 160%
+.logo
+  font-size: 70px
+.center
+  text-align: center
+
+// semantics
+.hidden
+  display: none !important
