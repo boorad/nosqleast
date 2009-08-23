@@ -49,34 +49,81 @@
         .gapLeft
           .dim Available commands are:
           .line
-            %a.command.unit.size1of4( href="#about" ) about
+            %a.command.unit.size1of4( href="#describe" ) describe
+            .lastUnit.size3of4 get description of the event
+          .line
+            %a.command.unit.size1of4( href="#who" ) who
             .lastUnit.size3of4 get list of organizers and sponsors
           .line
             %a.command.unit.size1of4( href="#agenda" ) agenda
             .lastUnit.size3of4 get the schedule of the conference
           .line
             %a.command.unit.size1of4( href="#register" ) register
-            .lastUnit.size3of4 get registration for $300 until September 31st
+            .lastUnit.size3of4 get registration for $120 until September 30th
           .line
             %a.command.unit.size1of4( href="#speakers" ) speakers
             .lastUnit.size3of4 get list of confirmed speakers
+          .line
+            %a.command.unit.size1of4( href="#location" ) location
+            .lastUnit.size3of4 get event location
+
 
         #commands
 
-        #speakers.hidden
+        #describe.cmddiv.hidden
+          .line.gapTop
+            .unit >&nbsp;
+            %h1.lastUnit.command describe
+
+          .gapLeft.smallGapTop
+            NoSQL East, a conference of non-relational data stores, aims
+            to present the experiences of different companies using so-called
+            "nosql" solutions in production.  The reasons for using these new
+            systems are varied, but often involve scale that relational
+            solutions cannot achieve.
+
+          .gapLeft.smallGapTop
+            Join us in Atlanta as we discuss "Big Data" and the systems that
+            are making short work of mammoth data sets.
+
+        #speakers.cmddiv.hidden
           .line.gapTop
             .unit >&nbsp;
             %h1.lastUnit.command speakers
 
           .gapLeft.smallGapTop
 
-            %h2 Brad Anderson
-            %p.dim He works at cloudant!
+            %h2
+              %span Arin Sarkissian -
+              %a.dim.under( href="http://digg.com" )Digg
+            %a.dim.under( href="http://incubator.apache.org/cassandra/" )
+              Cassandra
 
-            %h2.gapTop Chris Anderson
-            %p.dim He has the same last name as the other guy.
+            %h2.gapTop Kevin Smith - Hypotheticalabs
+            %p.dim Redis
 
-        #agenda.hidden
+            %h2.gapTop Don Brown - Twitpay
+            %p.dim Pig
+
+            %h2.gapTop Chris Curtin - Silverpop
+            %p.dim Cascading
+
+            %h2.gapTop Mark Gunnels
+            %p.dim HBase
+
+            %h2.gapTop John Hornbeck - Engine Yard
+            %p.dim MongoDB
+
+            %h2.gapTop Mike Miller - Cloudant
+            %p.dim CouchDB
+
+            %h2.gapTop Cliff Moon - Powerset
+            %p.dim Dynomite
+
+            %h2.gapTop Justin Sheehy - Basho
+            %p.dim Riak
+
+        #agenda.cmddiv.hidden
           .line.gapTop
             .unit >&nbsp;
             %h1.lastUnit.command agenda
@@ -95,7 +142,7 @@
             %p.dim 11:30am-12:30pm Talk 3
             %p.dim 12:30pm- 1:30pm Lunch
 
-        #register.hidden
+        #register.cmddiv.hidden
           .line.gapTop
             .unit >&nbsp;
             %h1.lastUnit.command register
@@ -103,16 +150,31 @@
           .gapLeft.smallGapTop
             %p.dim More info coming soon.
 
-        #about.hidden
+        #location.cmddiv.hidden
           .line.gapTop
             .unit >&nbsp;
-            %h1.lastUnit.command about
+            %h1.lastUnit.command location
+
+          .gapLeft.smallGapTop
+            %p.dim Georgia Tech Research Institute
+
+        #who.cmddiv.hidden
+          .line.gapTop
+            .unit >&nbsp;
+            %h1.lastUnit.command who
+
+          .gapLeft.smallGapTop
+            %h2.gapTop Sponsors
+            %p.dim
+              %a.sponsor( href="http://cloudant.com" )Cloudant
+            %p.dim
+              %a.sponsor( href="http://gtri.gatech.edu" )Georgia Tech Research Institute
 
           .gapLeft.smallGapTop
             %h2 Organizers
-            %p.dim More info coming soon.
-            %h2.gapTop Sponsors
-            %p.dim More info coming soon.
+            %p.dim Brad Anderson
+            %p.dim Matthew Podwysocki
+            %p.dim Chris Williams
 
         #notfound.hidden
           .line.gapTop
@@ -129,6 +191,9 @@
             |
 
       .foot
+        .smallGapTop.design
+          %span.dim design by
+          %a.link( href="http://twitter.com/steadicat" )steadicat
 
     %script( type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" )
     %script( type="text/javascript" src="../nosql.js" )

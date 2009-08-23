@@ -1,10 +1,15 @@
 function handle(path) {
+    var cmddivs = $(".cmddiv:visible");
+    console.debug(cmddivs);
+    cmddivs.hide();
     var p = $(path);
     if (!p.length) {
         p = $('#notfound');
         p.find('.command').text(path.substring(1));
     }
-    p.clone().removeAttr('id').appendTo($('#commands')).show();
+    p.show();
+    //$('#commands').replaceWith(p.show());
+    //p.clone().removeAttr('id').replaceWith($('#commands')).show();
     //p.remove();
 }
 

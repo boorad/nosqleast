@@ -359,8 +359,11 @@ html {
 .sql, .string {
   color: #f93; }
 
-.east {
+.east, .sponsor, .link {
   color: #066; }
+
+.under {
+  text-decoration: underline; }
 
 body {
   font-family: Aller, Corbel, sans-serif; }
@@ -373,6 +376,9 @@ body {
 
 .center {
   text-align: center; }
+
+.design {
+  font-size: 75%; }
 
 .hidden {
   display: none !important; }
