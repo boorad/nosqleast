@@ -43,29 +43,29 @@
 
       .body.border.bigAir
 
-        > help
+        #help
+          > help
 
-
-        .gapLeft
-          .dim Available commands are:
-          .line
-            %a.command.unit.size1of4( href="#describe" ) describe
-            .lastUnit.size3of4 get description of the event
-          .line
-            %a.command.unit.size1of4( href="#who" ) who
-            .lastUnit.size3of4 get list of organizers and sponsors
-          .line
-            %a.command.unit.size1of4( href="#agenda" ) agenda
-            .lastUnit.size3of4 get the schedule of the conference
-          .line
-            %a.command.unit.size1of4( href="#register" ) register
-            .lastUnit.size3of4 get registration for $125 until September 30th
-          .line
-            %a.command.unit.size1of4( href="#speakers" ) speakers
-            .lastUnit.size3of4 get list of confirmed speakers
-          .line
-            %a.command.unit.size1of4( href="#location" ) location
-            .lastUnit.size3of4 get event location
+          .gapLeft
+            .dim Available commands are:
+            .line
+              %a.command.unit.size1of4( href="#describe" ) describe
+              .lastUnit.size3of4 get description of the event
+            .line
+              %a.command.unit.size1of4( href="#who" ) who
+              .lastUnit.size3of4 get list of organizers and sponsors
+            .line
+              %a.command.unit.size1of4( href="#agenda" ) agenda
+              .lastUnit.size3of4 get the schedule of the conference
+            .line
+              %a.command.unit.size1of4( href="#register" ) register
+              .lastUnit.size3of4 get registration for $125 until September 30th
+            .line
+              %a.command.unit.size1of4( href="#speakers" ) speakers
+              .lastUnit.size3of4 get list of confirmed speakers
+            .line
+              %a.command.unit.size1of4( href="#location" ) location
+              .lastUnit.size3of4 get event location
 
 
         #commands
@@ -216,7 +216,7 @@
             %p.dim Matthew Podwysocki
             %p.dim Chris Williams
 
-        #notfound.hidden
+        #notfound.cmddiv.hidden
           .line.gapTop
             .unit >&nbsp;
             %h1.lastUnit.command abc
