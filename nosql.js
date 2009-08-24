@@ -39,17 +39,20 @@ $.fn.hide = function() {
     $(this).addClass('hidden');
 };
 $.fn.blink = function() {
-    $(this).animate({'opacity': '1'}, function() {
-        $(this).animate({'opacity': '0'}, function() {
-            $(this).blink();
-        });
-    });
+    var el = $(this);
+    el.css('visibility', 'hidden');
+    setTimeout(function() {
+        el.css('visibility', '');
+        setTimeout(function() {
+            el.blink();
+        }, 500);
+    }, 500);
 };
 $(function() {
     handle(location.hash);
     $('#cursor').blink();
 
-    $(document.body).bind('keypress', function(event) {
+    $(document).bind('keypress', function(event) {
         if (event.keyCode == 8) {
             $('#command').text($('#command').text().substring(0, $('#command').text().length-1));
             return false;
