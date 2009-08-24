@@ -1,6 +1,5 @@
 function handle(path) {
     var cmddivs = $(".cmddiv:visible");
-    console.debug(cmddivs);
     cmddivs.hide();
     var p = $(path);
     if (!p.length) {

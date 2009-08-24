@@ -59,7 +59,7 @@
             .lastUnit.size3of4 get the schedule of the conference
           .line
             %a.command.unit.size1of4( href="#register" ) register
-            .lastUnit.size3of4 get registration for $120 until September 30th
+            .lastUnit.size3of4 get registration for $125 until September 30th
           .line
             %a.command.unit.size1of4( href="#speakers" ) speakers
             .lastUnit.size3of4 get list of confirmed speakers
@@ -93,35 +93,45 @@
 
           .gapLeft.smallGapTop
 
-            %h2
-              %span Arin Sarkissian -
+            %h2.gapTop
+              Arin Sarkissian -
               %a.dim.under( href="http://digg.com" )Digg
-            %a.dim.under( href="http://incubator.apache.org/cassandra/" )
-              Cassandra
+            %a.dim.under( href="http://incubator.apache.org/cassandra/" )Cassandra
 
-            %h2.gapTop Kevin Smith - Hypotheticalabs
-            %p.dim Redis
+            %h2.gapTop
+              Kevin Smith -
+              %a.dim.under( href="http://hypotheticalabs.com" )Hypothetical Labs
+            %a.dim.under( href="http://code.google.com/p/redis/" )Redis
 
-            %h2.gapTop Don Brown - Twitpay
-            %p.dim Pig
+            %h2.gapTop
+              Don Brown -
+              %a.dim.under( href="http://twitpay.me" )Twitpay
+            %a.dim.under( href="http://hadoop.apache.org/pig/" )Pig
 
-            %h2.gapTop Chris Curtin - Silverpop
-            %p.dim Cascading
+            %h2.gapTop
+              Chris Curtin -
+              %a.dim.under( href="http://silverpop.com" )Silverpop
+            %a.dim.under( href="http://cascading.org" )Cascading
 
-            %h2.gapTop Mark Gunnels
-            %p.dim HBase
+            %h2.gapTop
+              John Hornbeck -
+              %a.dim.under( href="http://engineyard.com" )Engine Yard
+            %a.dim.under( href="http://mongodb.org" )MongoDB
 
-            %h2.gapTop John Hornbeck - Engine Yard
-            %p.dim MongoDB
+            %h2.gapTop
+              Mike Miller -
+              %a.dim.under( href="http://cloudant.com" )Cloudant
+            %a.dim.under(href="http://couchdb.apache.org" )CouchDB
 
-            %h2.gapTop Mike Miller - Cloudant
-            %p.dim CouchDB
+            %h2.gapTop
+              Cliff Moon -
+              %a.dim.under( href="http://powerset.com" )Microsoft / Powerset
+            %a.dim.under( href="http://wiki.github.com/cliffmoon/dynomite" )Dynomite
 
-            %h2.gapTop Cliff Moon - Powerset
-            %p.dim Dynomite
-
-            %h2.gapTop Justin Sheehy - Basho
-            %p.dim Riak
+            %h2.gapTop
+              Justin Sheehy -
+              %a.dim.under( href="http://basho.com" )Basho
+            %a.dim.under( href="http://riak.basho.com" )Riak
 
         #agenda.cmddiv.hidden
           .line.gapTop
@@ -129,34 +139,64 @@
             %h1.lastUnit.command agenda
 
           .gapLeft.smallGapTop
+            %p.dim A work in progress...
 
+          .gapLeft.smallGapTop
             %h2 Wednesday, October 28th
-            %p.dim 7:00pm-... Cocktail Welcome
+            %p.dim 7:00pm Cocktail Welcome
 
-            %h2.gapTop Thursday, October 29th
-            %p.dim 8:00am-9:00am Registration
-            %p.dim 9:00am-9:15am Opening Remarks
-            %p.dim 9:15am-10:15am Talk 1 / Keynote
-            %p.dim break
-            %p.dim 10:30am-11:30am Talk 2
-            %p.dim 11:30am-12:30pm Talk 3
-            %p.dim 12:30pm- 1:30pm Lunch
+          .gapLeft.smallGapTop
+            %h2 Thursday, October 29th
+            %p.dim  8:00am Registration
+            %p.dim  9:00am Opening Remarks
+            %p.dim  9:15am Talk 1 / Keynote
+            %p.dim 10:15am break
+            %p.dim 10:30am Talk 2
+            %p.dim 11:30am Talk 3
+            %p.dim 12:30pm Lunch
+            %p.dim  1:45pm Talk 4
+            %p.dim  2:45pm Talk 5
+            %p.dim  3:45pm Talk 6
+            %p.dim  6:00pm Dinner / Cocktails
+
+          .gapLeft.smallGapTop
+            %h2 Friday, October 30th
+            %p.dim TBD
 
         #register.cmddiv.hidden
           .line.gapTop
             .unit >&nbsp;
             %h1.lastUnit.command register
 
+          %script( type="text/javascript" src="https://www.amiando.com/resources/js/amiandoExport.js" )
           .gapLeft.smallGapTop
-            %p.dim More info coming soon.
+            %iframe( src="https://www.amiando.com/nosqleast.html?viewType=iframe&panelId=522582&useDefaults=false&useEventColors=false&simple_cbox=222222&simple_ctext=aaaaaa&simple_clink=006666&resizeIFrame=true" frameborder="0" width="650px" height="450px" name="_amiandoIFrame522582a8n9gXx0" id="_amiandoIFrame522582a8n9gXx0" )
+              %span Try out the
+              %a.dim( href="http://www.amiando.com/" )online event registration system
+              from amiando.
+
+            %p.tag
+            %a.tag.link( href="http://www.amiando.com/conference-management-software.html" alt="Conference Management Software" title="Conference Management Software" )Conference Management Software
+            %span.tag by amiando
+
+
 
         #location.cmddiv.hidden
           .line.gapTop
             .unit >&nbsp;
             %h1.lastUnit.command location
 
-          .gapLeft.smallGapTop
-            %p.dim Georgia Tech Research Institute
+            .gapLeft.smallGapTop
+              %h2 Venue
+              %p.dim Georgia Tech Research Institute
+              %p.dim 250 14th St. NW
+              %p.dim Atlanta, GA  30318
+
+            .gapLeft.smallGapTop
+              %h2 Accommodations
+              %p.dim
+              %a.link( href="http://www.marriott.com/hotels/travel/atlmn-courtyard-atlanta-midtown-georgia-tech/" )Courtyard by Marriott
+              %span.dim right next door
 
         #who.cmddiv.hidden
           .line.gapTop
@@ -191,7 +231,7 @@
             |
 
       .foot
-        .smallGapTop.design
+        .smallGapTop.bigGapBottom.tag
           %span.dim design by
           %a.link( href="http://twitter.com/steadicat" )steadicat
 
