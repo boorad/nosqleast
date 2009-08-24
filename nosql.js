@@ -56,6 +56,7 @@ $(function() {
         } else if (event.keyCode == 13) {
             location.hash = '#' + $('#command').text();
             handle(location.hash);
+            $('#command').text('');
         }
         var c = String.fromCharCode(event.charCode);
         $('#command').text($('#command').text() + c);
