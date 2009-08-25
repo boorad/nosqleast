@@ -356,10 +356,10 @@ html {
 .command, .no {
   color: #c36; }
 
-.sql, .string {
+.sql, .string, .sponsor {
   color: #f93; }
 
-.east, .sponsor, .link {
+.east, .link {
   color: #066; }
 
 .under {
