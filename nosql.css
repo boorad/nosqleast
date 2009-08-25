@@ -328,8 +328,8 @@ b {
   padding-right: 40px; }
 
 @font-face {
-  font-family: Aller;
-  src: url(fonts/aller.ttf); }
+  font-family: Mentone;
+  src: url(fonts/mentone.otf); }
 
 a {
   text-decoration: none; }
@@ -366,7 +366,7 @@ html {
   text-decoration: underline; }
 
 body {
-  font-family: Aller, Corbel, sans-serif; }
+  font-family: Mentone, Corbel, sans-serif; }
 
 .page {
   font-size: 160%; }
