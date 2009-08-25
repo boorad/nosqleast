@@ -28,11 +28,9 @@
               %span.dim =
               %span.string "Atlanta, GA"
 
-        .line.center.bigAir.border
+        .line.center.smallAir.border
           select
-          %span.bright fun
-          %span.dim<> ,
-          %span.bright profit
+          %span.bright fun, profit
           from
           %span.bright real_world
           where
@@ -59,7 +57,7 @@
               .lastUnit.size3of4 get the schedule of the conference
             .line
               %a.command.unit.size1of4( href="#register" ) register
-              .lastUnit.size3of4 get registration for $125 until September 30th
+              .lastUnit.size3of4 get early bird registration until September 30th
             .line
               %a.command.unit.size1of4( href="#speakers" ) speakers
               .lastUnit.size3of4 get list of confirmed speakers
@@ -75,16 +73,20 @@
             .unit >&nbsp;
             %h1.lastUnit.command describe
 
-          .gapLeft.smallGapTop
+          .gapLeft.gapTop
             NoSQL East, a conference of non-relational data stores, aims
             to present the experiences of different companies using so-called
-            "nosql" solutions in production.  The reasons for using these new
-            systems are varied, but often involve scale that relational
-            solutions cannot achieve.
+            "nosql" solutions in production.
 
-          .gapLeft.smallGapTop
+          .gapLeft.gapTop
+            The reasons for using these new
+            systems are varied, but often involve scale that relational
+            solutions cannot achieve.  We have a new tool in our toolbelts,
+            and as you will see, some people are using them quite effectively.
+
+          .gapLeft.gapTop
             Join us in Atlanta as we discuss "Big Data" and the systems that
-            are making short work of mammoth data sets.
+            are completely transforming how people look at data.
 
         #speakers.cmddiv.hidden
           .line.gapTop
@@ -155,13 +157,15 @@
             %p.dim  8:00am Registration
             %p.dim  9:00am Opening Remarks
             %p.dim  9:15am Talk 1 / Keynote
-            %p.dim 10:15am break
-            %p.dim 10:30am Talk 2
-            %p.dim 11:30am Talk 3
+            %p.dim 10:00am Talk 2
+            %p.dim 10:45am break
+            %p.dim 11:00am Talk 3
+            %p.dim 11:45pm Talk 4
             %p.dim 12:30pm Lunch
-            %p.dim  1:45pm Talk 4
-            %p.dim  2:45pm Talk 5
-            %p.dim  3:45pm Talk 6
+            %p.dim  1:45pm Talk 5
+            %p.dim  2:30pm Talk 6
+            %p.dim  3:15pm break
+            %p.dim  3:30pm Talk 7
             %p.dim  6:00pm Dinner / Cocktails
 
           .gapLeft.smallGapTop
@@ -202,6 +206,7 @@
               %p.dim
               %a.link( href="http://www.marriott.com/hotels/travel/atlmn-courtyard-atlanta-midtown-georgia-tech/" )Courtyard by Marriott
               %span.dim right next door
+              %p.dim $114 per night - "NoSQL East" rate until Sept. 30
 
         #who.cmddiv.hidden
           .line.gapTop
