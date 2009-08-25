@@ -382,3 +382,6 @@ body {
 
 .hidden {
   display: none !important; }
+
+.right {
+  text-align: right; }
