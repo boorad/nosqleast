@@ -1,6 +1,5 @@
 function handle(path) {
-    var cmddivs = $(".cmddiv:visible");
-    cmddivs.hide();
+    $(".cmddiv:visible").hide();
     var p = $(path);
     if (!p.length) {
         p = $('#notfound');
@@ -48,6 +47,7 @@ $.fn.blink = function() {
         }, 500);
     }, 500);
 };
+
 $(function() {
     handle(location.hash);
     $('#cursor').blink();
@@ -61,8 +61,10 @@ $(function() {
             handle(location.hash);
             $('#command').text('');
         }
-        var c = String.fromCharCode(event.charCode);
-        $('#command').text($('#command').text() + c);
+        if (event.charCode) {
+            var c = String.fromCharCode(event.charCode);
+            $('#command').text($('#command').text() + c);
+        }
     });
 
 });
