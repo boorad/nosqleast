@@ -51,8 +51,8 @@ $.fn.blink = function() {
 $(function() {
     handle(location.hash);
     $('#cursor').blink();
-
     $(document).bind('keypress', function(event) {
+        if (event.altKey || event.ctrlKey || event.metaKey) return;
         if (event.keyCode == 8) { // Backspace
             $('#command').text($('#command').text().substring(0, $('#command').text().length-1));
             return false;
@@ -60,7 +60,15 @@ $(function() {
             location.hash = '#' + $('#command').text();
             handle(location.hash);
             $('#command').text('');
-        } else if (event.keyCode == 9) { // Tab
+        }
+        if (event.charCode) {
+            var c = String.fromCharCode(event.charCode);
+            $('#command').text($('#command').text() + c);
+        }
+    });
+    $(document).bind('keydown', function(event) {
+        if (event.altKey || event.ctrlKey || event.metaKey) return;
+        if (event.keyCode == 9) { // Tab
             var t = $('#command').text();
             $('.cmddiv').each(function(i, el) {
                 if ($(el).attr('id').substring(0, t.length) == t) {
@@ -68,12 +76,6 @@ $(function() {
                     return false;
                 }
             });
-            return false;
-        }
-        if (event.charCode) {
-            var c = String.fromCharCode(event.charCode);
-            $('#command').text($('#command').text() + c);
         }
     });
-
 });
