@@ -1,3 +1,6 @@
+if ((location.hostname == 'nosqleast.com') && (location.protocol == 'http:')) {
+    window.location.href = 'http://nosqleast.com/';
+}
 function handle(path) {
     $(".cmddiv:visible").hide();
     var p = $(path);
@@ -6,15 +9,7 @@ function handle(path) {
         p.find('.command').text(path.substring(1));
     }
     p.show();
-    //$('#commands').replaceWith(p.show());
-    //p.clone().removeAttr('id').replaceWith($('#commands')).show();
-    //p.remove();
 }
-
-$('a[href="#home"]').live('click', function() {
-    window.hash = '';
-    return false;
-});
 
 $('a.command').live('mouseover', function() {
     $('#cursor').hide();
