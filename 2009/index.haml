@@ -4,6 +4,8 @@
     %title no:sql(east) conference.
     %link( rel="stylesheet" type="text/css" href="../nosql.css" )
   %body
+    %script( type="text/javascript" )
+      document.write('<style type="text/css">.hidden { display: none }</style>');
 
     .page.narrow
 
@@ -338,7 +340,7 @@
             %p
               %a.link( href="http://twitter.com/voodootikigod" title="voodootikigod" )Chris Williams
 
-        #notfound.cmddiv.hidden
+        #notfound.cmddiv.alwaysHidden
           .line.gapTop
             .unit >&nbsp;
             %h1.lastUnit.command abc

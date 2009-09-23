@@ -380,7 +380,7 @@ body {
 .tag {
   font-size: 75%; }
 
-.hidden {
+.alwaysHidden {
   display: none !important; }
 
 .right {

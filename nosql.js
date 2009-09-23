@@ -27,7 +27,7 @@ $('a.command').live('click', function() {
 
 
 $.fn.show = function() {
-    $(this).removeClass('hidden');
+    $(this).removeClass('hidden').removeClass('alwaysHidden');
 };
 $.fn.hide = function() {
     $(this).addClass('hidden');
