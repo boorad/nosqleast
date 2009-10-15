@@ -392,6 +392,16 @@
           #cursor.bright.unit
             |
 
+      .line.center.smallAir.border.dim
+        %h2 Sponsored By
+
+        .sponsors.line.bigAir
+          %a.sponsorImage.centered.cloudant( href="http://cloudant.com" )<> Cloudant
+          %a.sponsorImage.centered.georgia( href="http://gtri.gatech.edu" )<> Georgia Tech
+          %a.sponsorImage.centered.rackspace( href="http://rackspacecloud.com" )<> Rackspace Cloud
+          %a.sponsorImage.centered.basho( href="http://basho.com" )<> Basho
+
+
       .foot.smallAirTop.bigAirBottom
         .unit.size1of2.tag
           %span Contact Us:
@@ -402,6 +412,7 @@
         .lastUnit.size1of2.tag.right
           %span.dim design by
           %a.link( href="http://twitter.com/steadicat" )steadicat
+
 
     %script( type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" )
     %script( type="text/javascript" src="../nosql.js" )
