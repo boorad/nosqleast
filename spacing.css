@@ -1,0 +1,71 @@
+.gapTop, .gapVertical, .gap {
+  margin-top: 20px; }
+
+.gapBottom, .gapVertical, .gap {
+  margin-bottom: 20px; }
+
+.gapLeft, .gapHorizontal, .gap {
+  margin-left: 20px; }
+
+.gapRight, .gapHorizontal, .gap {
+  margin-right: 20px; }
+
+.airTop, .airVertical, .air {
+  padding-top: 20px; }
+
+.airBottom, .airVertical, .air {
+  padding-bottom: 20px; }
+
+.airLeft, .airHorizontal, .air {
+  padding-left: 20px; }
+
+.airRight, .airHorizontal, .air {
+  padding-right: 20px; }
+
+.smallGapTop, .smallGapVertical, .smallGap {
+  margin-top: 10px; }
+
+.smallGapBottom, .smallGapVertical, .smallGap {
+  margin-bottom: 10px; }
+
+.smallGapLeft, .smallGapHorizontal, .smallGap {
+  margin-left: 10px; }
+
+.smallGapRight, .smallGapHorizontal, .smallGap {
+  margin-right: 10px; }
+
+.smallAirTop, .smallAirVertical, .smallAir {
+  padding-top: 10px; }
+
+.smallAirBottom, .smallAirVertical, .smallAir {
+  padding-bottom: 10px; }
+
+.smallAirLeft, .smallAirHorizontal, .smallAir {
+  padding-left: 10px; }
+
+.smallAirRight, .smallAirHorizontal, .smallAir {
+  padding-right: 10px; }
+
+.bigGapTop, .bigGapVertical, .bigGap {
+  margin-top: 40px; }
+
+.bigGapBottom, .bigGapVertical, .bigGap {
+  margin-bottom: 40px; }
+
+.bigGapLeft, .bigGapHorizontal, .bigGap {
+  margin-left: 40px; }
+
+.bigGapRight, .bigGapHorizontal, .bigGap {
+  margin-right: 40px; }
+
+.bigAirTop, .bigAirVertical, .bigAir {
+  padding-top: 40px; }
+
+.bigAirBottom, .bigAirVertical, .bigAir {
+  padding-bottom: 40px; }
+
+.bigAirLeft, .bigAirHorizontal, .bigAir {
+  padding-left: 40px; }
+
+.bigAirRight, .bigAirHorizontal, .bigAir {
+  padding-right: 40px; }

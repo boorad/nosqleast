@@ -119,7 +119,7 @@
               %a.sponsor( href="http://hadoop.apache.org/pig/" )Pig
 
             %h2.smallGapTop
-              Chris Curtin
+              %a.command.speaker( href="#speaker/curtin" ) Chris Curtin
               %span.dim<> &nbsp;(
               %a.east( href="http://silverpop.com" )<> Silverpop
               %span.dim<> ):&nbsp;
@@ -255,7 +255,9 @@
                 %p.unit.size1of3.dim.right.gapRight 10:45am
                 %p.lastUnit.dim break
                 %p.unit.size1of3.dim.right.gapRight 11:00am
-                %p.lastUnit Chris Curtin - Cascading
+                %p.lastUnit
+                  %a.command.speaker( href="#speaker/curtin" ) Chris Curtin
+                  \- Cascading
               .lastUnit.size1of2
                 %h2.bigGapLeft.smallGapBottom.bright Alternative Track
                 %p.unit.size1of3.dim.right.gapRight  9:15am
@@ -349,6 +351,40 @@
 
           .gapLeft.smallGapTop
             %h2 Command not found.
+
+        #speaker-curtin.cmddiv.hidden
+          .line.gapTop
+            .unit >&nbsp;
+            %h1.lastUnit.command speaker curtin
+
+          .gapLeft.gapTop
+            Chris Curtin is the CTO of Silverpop. Chris Curtin brings
+            more than 19 years of experience leading the design and
+            development of large-scale, mission-critical, distributed
+            business applications. Previously, he was the director of
+            engineering for Bradley Ward Systems Inc., where he
+            developed and implemented manufacturing applications for
+            the food industry and was lead architect at Manhattan
+            Associates. Curtin graduated from the University of
+            Massachusetts with a Bachelor of Science degree in
+            computer science.
+
+          %h2.bright.gapVertical.smallGapBottom.gapLeft Abstract
+
+          .gapLeft.gapTop
+            Map/Reduce, as provided in Apache’s Hadoop, is simple in
+            concept, but difficult in practice. Many real world tasks
+            require multiple map/reduce tasks and sometimes figuring
+            out which step to perform an operation in can be a
+            challenge.
+            %a( href="http://www.cascading.org/" ) Cascading
+            is an open source
+            abstraction layer on top of Hadoop that provides an easy
+            to use, but powerful API that figures out what problems
+            you are trying to solve and builds the appropriate map,
+            reduce and dependency logic. In this presentation I will
+            be explaining the concepts of Cascading and showing how it
+            is used to solve real world problems.
 
         #prompt.line.gapTop
           .unit >&nbsp;

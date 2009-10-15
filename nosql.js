@@ -3,7 +3,7 @@ if ((location.hostname == 'nosqleast.com') && (location.protocol == 'http:')) {
 }
 function handle(path) {
     $(".cmddiv:visible").hide();
-    var p = $(path);
+    var p = $(path.replace('/','-'));
     if (!p.length) {
         p = $('#notfound');
         p.find('.command').text(path.substring(1));
@@ -13,7 +13,11 @@ function handle(path) {
 
 $('a.command').live('mouseover', function() {
     $('#cursor').hide();
-    $('#command').text($(this).text());
+    if ($(this).is('.speaker')) {
+        $('#command').text($(this).attr('href').replace('#','').replace('/', ' '));
+    } else {
+        $('#command').text($(this).text());
+    }
 });
 
 $('a.command').live('mouseout', function() {
