@@ -59,13 +59,13 @@
               .lastUnit.size3of4 get the schedule of the conference
             .line
               %a.command.unit.size1of4( href="#register" ) register
-              .lastUnit.size3of4 get early bird registration until September 30th
+              .lastUnit.size3of4 get registration details & form
             .line
               %a.command.unit.size1of4( href="#speakers" ) speakers
               .lastUnit.size3of4 get list of confirmed speakers
             .line
               %a.command.unit.size1of4( href="#location" ) location
-              .lastUnit.size3of4 get event location
+              .lastUnit.size3of4 get event locations
 
 
         #commands
@@ -126,9 +126,9 @@
               %a.sponsor( href="http://cascading.org" )Cascading
 
             %h2.smallGapTop
-              %a.command.speaker( href="#speaker/hornbeck" ) John Hornbeck
+              %a.command.speaker( href="#speaker/banker" ) Kyle Banker
               %span.dim<> &nbsp;(
-              %a.east( href="http://engineyard.com" )<> Engine Yard
+              %a.east( href="http://10gen.com" )<> 10gen
               %span.dim<> ):&nbsp;
               %a.sponsor( href="http://mongodb.org" )MongoDB
 
@@ -205,8 +205,16 @@
             %p.unit.size1of6.dim.right.gapRight 5:00pm
             %p.lastUnit
               %a.sponsor( href="http://www.meetup.com/awsomeatlanta/calendar/11327683/" )Cloud Camp Atlanta II
-            %p.unit.size1of6.dim.right.gapRight 7:00pm
-            %p.lastUnit NoSQL East - Cocktail Welcome
+            %p.unit.size1of6.dim.right.gapRight.gapTop 7:00pm
+            %p.lastUnit.gapTop NoSQL East - Cocktail Welcome
+            %p.unit.size1of6.dim.right.gapRight &nbsp;
+            %p.lastUnit
+              %span.tag sponsored by
+              %a.link.tag( href="http://basho.com" ) Basho Technologies
+            %p.unit.size1of6.dim.right.gapRight at
+            %p.lastUnit
+              Tap, a gastropub -
+              %a.sponsor( href="http://local.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1180+Peachtree+Street,+30309&sll=33.78571,-84.394913&sspn=0.085532,0.068836&ie=UTF8&hq=&hnear=1180+W+Peachtree+St+NE,+Atlanta,+Fulton,+Georgia+30309&z=16&iwloc=r17" ) Map
 
           .gapLeft.gapTop
             %h2.east.smallGapVertical Thursday, October 29th
@@ -220,8 +228,8 @@
               \- Keynote
             %p.unit.size1of6.dim.right.gapRight  9:45am
             %p.lastUnit
-              %a.command.speaker( href="#speaker/hornbeck" ) John Hornbeck
-              \- MongoDB
+              %a.command.speaker( href="#speaker/magnusson" ) Geir Magnusson
+              \- Voldemort
             %p.unit.size1of6.dim.right.gapRight 10:30am
             %p.lastUnit.dim break
             %p.unit.size1of6.dim.right.gapRight 10:45am
@@ -246,14 +254,24 @@
             %p.lastUnit.dim break
             %p.unit.size1of6.dim.right.gapRight  3:30pm
             %p.lastUnit
-              %a.command.speaker( href="#speaker/magnusson" ) Geir Magnusson
-              \- Voldemort
+              %a.command.speaker( href="#speaker/banker" ) Kyle Banker
+              \- MongoDB
             %p.unit.size1of6.dim.right.gapRight  4:15pm
             %p.lastUnit
               %a.command.speaker( href="#speaker/gunnels" ) Mark Gunnels
               \- HBase
             %p.unit.size1of6.dim.right.gapRight.gapTop  7:00pm
-            %p.lastUnit.gapTop Dinner / Cocktails
+            %p.lastUnit.gapTop Cocktail Reception
+            %p.unit.size1of6.dim.right.gapRight &nbsp;
+            %p.lastUnit
+              %span.tag sponsored by
+              %a.link.tag( href="http://rackspacecloud.com" ) The Rackspace Cloud
+            %p.unit.size1of6.dim.right.gapRight at
+            %p.lastUnit
+              Twisted Taco -
+              %a.sponsor( href="http://local.google.com/maps?f=d&source=s_d&saddr=250+14th+St+NW,+Atlanta,+GA+30318&daddr=66+12th+St+NE,+Atlanta,+GA+30309-3979+(Twisted+Taco)&hl=en&geocode=%3BFe6CAwIdRGL4-iEGAML0fv7orA&mra=ls&dirflg=w&sll=33.785389,-84.389656&sspn=0.021383,0.017209&ie=UTF8&ll=33.785389,-84.389001&spn=0.021383,0.017209&z=16" ) Map
+
+
 
           .gapLeft.gapTop
             %h2.east.smallGapVertical Friday, October 30th
@@ -261,12 +279,12 @@
             %p.lastUnit Light Breakfast
             %p.unit.size1of6.dim.right.gapRight.gapTop  9:00am
             %p.lastUnit.gapTop
-              %a.command.speaker( href="#speaker/weil" ) Kevin Weil
-              \- Pig
+              %a.command.speaker( href="#speaker/arrott" ) Matt Arrott
+              \- Keynote
             %p.unit.size1of6.dim.right.gapRight  9:45am
             %p.lastUnit
-              %a.command.speaker( href="#speaker/anglade" ) Tim Anglade
-              \- tin
+              %a.command.speaker( href="#speaker/weil" ) Kevin Weil
+              \- Pig
             %p.unit.size1of6.dim.right.gapRight 10:30am
             %p.lastUnit.dim break
             %p.unit.size1of6.dim.right.gapRight 10:45am
@@ -293,6 +311,10 @@
             %p.lastUnit
               %a.command.speaker( href="#speaker/yu" ) Yuan Yu
               \- Dryad / DryadLINQ
+            %p.unit.size1of6.dim.right.gapRight  4:15pm
+            %p.lastUnit
+              %a.command.speaker( href="#speaker/anglade" ) Tim Anglade
+              \- tin
 
         #register.cmddiv.hidden
           .line.gapTop
@@ -318,19 +340,35 @@
             %h1.lastUnit.command location
 
             .gapLeft
-              %h2.bright.gapVertical.smallGapBottom Venue
+              %h2.bright.gapVertical.smallGapBottom Conference Venue
               %p Georgia Tech Research Institute - Conference Center
               %p 250 14th St. NW
               %p Atlanta, GA  30318
               %a.sponsor( href="http://local.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=250+14th+St+NW,+Atlanta,+GA+30318&sll=37.0625,-95.677068&sspn=81.793186,70.488281&ie=UTF8&ll=33.78571,-84.394913&spn=0.087529,0.068836&z=14" )Map
 
+            .gapLeft
+              %h2.bright.gapVertical.smallGapBottom Wednesday Cocktail Welcome - 7:00pm
+              %p
+                sponsored by
+                %a.link( href="http://basho.com" ) Basho Technologies
+              %p.smallGapTop Tap, a gastropub
+              %p 1180 W. Peachtree Street NE
+              %p Atlanta, GA  30309
+              %a.sponsor( href="http://local.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=1180+Peachtree+Street,+30309&sll=33.78571,-84.394913&sspn=0.085532,0.068836&ie=UTF8&hq=&hnear=1180+W+Peachtree+St+NE,+Atlanta,+Fulton,+Georgia+30309&z=16&iwloc=r17" )Map
+
+            .gapLeft
+              %h2.bright.gapVertical.smallGapBottom Thursday Cocktail Reception - 7:00pm
+              %p
+                sponsored by
+                %a.link( href="http://rackspacecloud.com" ) The Rackspace Cloud
+              %p.smallGapTop Twisted Taco
+              %p 66 12th Street NE
+              %p Atlanta, GA  30309
+              %a.sponsor( href="http://local.google.com/maps?f=d&source=s_d&saddr=250+14th+St+NW,+Atlanta,+GA+30318&daddr=66+12th+St+NE,+Atlanta,+GA+30309-3979+(Twisted+Taco)&hl=en&geocode=%3BFe6CAwIdRGL4-iEGAML0fv7orA&mra=ls&dirflg=w&sll=33.785389,-84.389656&sspn=0.021383,0.017209&ie=UTF8&ll=33.785389,-84.389001&spn=0.021383,0.017209&z=16" )Map
+
               %h2.bright.gapVertical.smallGapBottom Accommodations
               %a.link( href="http://www.marriott.com/hotels/travel/atlmn-courtyard-atlanta-midtown-georgia-tech/" )Courtyard by Marriott
               %span right next door
-              %p
-                $114 per night -
-                %a.sponsor( href="http://www.marriott.com/hotels/travel/ATLMN?groupCode=nsqnsqa&app=resvlink&fromDate=10/28/09&toDate=10/30/09" ) NoSQL East rate
-                until Sept. 30
 
         #who.cmddiv.hidden
           .line.gapTop
@@ -440,18 +478,31 @@
             be explaining the concepts of Cascading and showing how it
             is used to solve real world problems.
 
-        #speaker-hornbeck.cmddiv.hidden
+        #speaker-arrott.cmddiv.hidden
           .line.gapTop
             .unit >&nbsp;
-            %h1.lastUnit.command speaker hornbeck
+            %h1.lastUnit.command speaker arrott
 
           .gapLeft.gapTop
-            John Hornbeck is a project manager for Engine Yard's support department where he manages a distributed support team located throughout the world. He helps bring new components into Engine Yard's stack and works with engineers to make sure they are fully trained on each item they support. Before Engine Yard, John worked on the Ubuntu project and ran his own Ruby on Rails consultancy where he helped start the development of Grocio, a grocery shopping comparison engine. He's from Lawton, OK where he lives with his wife and three children.
+            Matt Arrott
 
           %h2.bright.gapVertical.smallGapBottom.gapLeft Abstract
 
           .gapLeft.gapTop
-            MongoDB is a schema-free document database being used by Engine Yard, their customers and Grocio to succeed in creating data models that truly fit their business needs. Grocio is using it to store product data received from thousands of grocery stores around the US. Engine Yard is using it to gain better metrics on support ticket data. An Engine Yard customer is using it to speed up delivery of data to its customers. All of these companies are using MongoDB in a unique and interesting way to better their business. John will discuss each of these companies and how they are using MongoDB.
+            Oceans of Data
+
+        #speaker-banker.cmddiv.hidden
+          .line.gapTop
+            .unit >&nbsp;
+            %h1.lastUnit.command speaker banker
+
+          .gapLeft.gapTop
+            Kyle Banker works at 10gen, where he maintains the MongoDB Ruby Driver and supports the Ruby developer community. Previously, Kyle built e-commerce and social networking applications at Alexander Interactive, and wishes he could have modeled his data as documents at the time. In a past life, Kyle thrived as a languages nerd and taught English literature; he hopes you'll find his presentation pedagogically sound.
+
+          %h2.bright.gapVertical.smallGapBottom.gapLeft Abstract
+
+          .gapLeft.gapTop
+            MongoDB is a high-performance, schema-free, document-oriented database built for scalability. Kyle will briefly highlight MongoDB's features, focusing on document indexing, dynamic querying, and large-object storage.  Following that, Kyle will address document-oriented data modeling in MongoDB, discuss how the database is used in production at Business Insider, and suggest ideal use cases for MongoDB.
 
         #speaker-miller.cmddiv.hidden
           .line.gapTop
@@ -548,12 +599,12 @@
             %h1.lastUnit.command speaker magnusson
 
           .gapLeft.gapTop
-            
+
 
           %h2.bright.gapVertical.smallGapBottom.gapLeft Abstract
 
           .gapLeft.gapTop
-            
+
         #speaker-yu.cmddiv.hidden
           .line.gapTop
             .unit >&nbsp;
